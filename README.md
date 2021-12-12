@@ -1,3 +1,3 @@
 # MyAutoHotKeys
 
-Install Autohotkey software and run Main script.
+Install Autohotkey (https://www.autohotkey.com/) and run Main script.
