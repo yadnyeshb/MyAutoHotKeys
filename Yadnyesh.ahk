@@ -1,18 +1,11 @@
-﻿#include AlwaysOnTop.ahk
-#include ABC.ahk
 #include GermanAlphabet.ahk
-
-Rnd1 =0
-Rnd2=0
-Rnd3=0
-Rnd4=0
+#include ABC.ahk
 CNSetPassword()
 
-
-^SPACE:: WinOnTop()
-
-	
-
+	Rnd1 =0
+	Rnd2=0
+	Rnd3=0
+	Rnd4=0
 ^!a::   ;ctrl+alt+a
 	;CNSetPassword()
 	x := CNGetPassword()
@@ -24,7 +17,7 @@ CNSetPassword()
 	}
 	else
 	{
-		SendRaw agneskhanna`t
+		SendRaw uidv4173`t
 	}
 	
 	SendRaw %x%`n
@@ -116,6 +109,7 @@ SendLetterA() {
 	SendRaw %time%
 	return
 
+
 !a:: 
 GermanKey("a")
 return
@@ -142,7 +136,7 @@ return
 	
 !S:: 
 GermanKey("s")
-return	
+return
 
 !e:: 
 GermanKey("e")
@@ -150,4 +144,8 @@ return
 
 !m:: 
 GermanKey("m")
+return
+
+!"::
+GermanKey("""")
 return
